@@ -1,8 +1,22 @@
-/* CSS */ 
+/* CSS - game.html */ 
 
 body{
     font-family: sans-serif;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    outline: 0;
+  }
 
 h1{
     margin: 0;
@@ -33,5 +47,148 @@ canvas{
     color: darkcyan;
 }
 
+/* CSS - index.html */
+
+.header{
+    min-height: 50px;
+    background: linear-gradient(to right, rgb(28, 121, 63), rgb(25, 101, 54));
+}
+
+.header_bar{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header_bar_title{
+    font-size: 1.5rem;
+    padding-top: 10px; 
+    color: white;
+}
+
+.header_bar_nav{
+    margin-left: auto;
+    padding-top: 12px;
+}
+
+.nav_a{
+    margin-left: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.box_heroImage{
+    height: 800px;
+    background-image: url(images/HeroImage.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_heroImage_title h1{
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(150, 150, 150, 0.89);
+}
+
+.box_tutorial{
+    background: rgb(89,250,0);
+    background: linear-gradient(0deg, rgba(89,250,0,1) 0%, rgba(10,190,0,0) 100%); 
+    text-align: center;
+    margin-top: -150px;
+}
+
+.box_tutorial_title{
+    margin: 100px 0 100px 0;
+    font-size: 2.5rem;
+    margin-top: 200px;
+    padding-top: 100px;
+}
+
+.box_tutorial_text{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    padding-bottom: 200px;
+}
+
+.box_play{
+    background: rgba(89,250,0,1);
+    height: 450px;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.box_play_button{
+    display: inline-block;
+    position: relative;
+    padding: 30px 60px;
+    top: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    border-radius: 250px;
+    border-bottom: 1px solid rgba( 28, 227, 125, 0.5 );
+    background: rgba( 255, 255, 255, 1 );
+    color: rgb(219, 219, 219);
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+    transform: translateZ(0);
+    transition: all 0.2s ease;
+    color: #000;
+}
+
+.box_play_button:hover{
+    top: -10px;
+    box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+    transform: rotateX(20deg);
+}
+
+.box_play_button:active {
+    top: 0px;
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
+    background: rgba( 20, 224, 133, 1 );
+  }
 
 
+
+
+
+@media only screen and (max-width: 1380px) {
+    .box_heroImage{
+        height: 600px;
+    }
+
+    .box_heroImage_title h1{
+        font-size: 3rem;
+    }
+
+    .box_tutorial_text{
+        font-size: 1.5rem;
+    }
+
+    .box_tutorial_title{
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .box_heroImage{
+        height: 450px;
+    }
+
+    .box_heroImage_title h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .box_heroImage{
+        height: 300px;
+    }
+
+    .box_heroImage_title h1{
+        font-size: 2rem;
+    }
+}

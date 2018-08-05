@@ -3,18 +3,44 @@
 <head>
     <!-- Link para o Phaser -->
     <script src="http://cdn.jsdelivr.net/npm/phaser@3.10.1/dist/phaser.js"></script>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
-    <div id="menu">
-        <h1 id="lives">Lives: </h1>
-        <h1 id="money">Money: </h1>
-        <h1 id="score">Score: </h1>
-        <h1 id="waves">Wave 1 </h1>
-        <h1 id="pause">Pause</h1>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header_bar">
+            <h1 class="header_bar_title">Tower Defense</h1>
+            <nav class="header_bar_nav">
+                <a class="nav_a" href="#box_tutorial_title_">Tutorial</a>
+                <a class="nav_a" href="#play">The Game</a>                
+        </div>
+    </header>
+
+    <!-- Conteudo -->
+    <div class="box">
+        <div class="box_heroImage">
+            <div class="box_heroImage_title">
+                <h1> Tower Defense Game </h1>
+            </div>
+            
+        </div>
+        <div class="box_tutorial">
+            <h1 id="box_tutorial_title_" class="box_tutorial_title">Tutorial</h1>
+
+            <p class="box_tutorial_text"> The objective of the game is to try to prevent enemies from traversing the map and delay
+             them with towers that shoot at them as they pass. Enemies and towers often have different abilities and costs. 
+             When an enemy is defeated, the player gets some money that is used to buy or perfect the available towers. </p>
+        </div>
+
+        <!-- Botão para jogar -->
+        <div class="box_play">
+            <a href="game.html"><button id="play" class="box_play_button" href="">Play the Game</button></a> 
+        </div>       
     </div>
-    <script src="game.js"></script>
 
 </body>
 </html>

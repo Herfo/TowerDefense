@@ -26,8 +26,8 @@ let game = new Phaser.Game(config);
 // Declaração das variáveis
 let graphics;
 let path;
-let ENEMY_SPEED = 1/10000;
-let BULLET_DAMAGE = 25;
+let ENEMY_SPEED = 1/15000;
+let BULLET_DAMAGE = 50;
 let money = 150;
 let score = 0;
 let lives = 10;
@@ -37,9 +37,7 @@ let scoreDiv = document.getElementById('score');
 let livesDiv = document.getElementById('lives');
 let pause = document.getElementById('pause');
 
-
-
-
+// Mapa do jogo
 let map =      [[ 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0],
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0],
                 [ 0, 0, -1, -1, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -284,12 +282,12 @@ function create ()
 //        console.log(game.paused)
 //    } )
     
-    pause.addEventListener('click',function(){
-        game.pauseEvent = game.pauseEvent ? false : true;
-        console.log(game.paused);
-        console.log(pauseEvent);
+    // pause.addEventListener('click',function(){
+    //     game.pauseEvent = game.pauseEvent ? false : true;
+    //     console.log(game.paused);
+    //     console.log(pauseEvent);
         
-    } )
+    // } )
     
 //    pause.addEventListener('click',function(){
 //        game.physics.arcade.isPaused = (game.physics.arcade.isPaused) ? false : true;
